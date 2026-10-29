@@ -1,0 +1,26 @@
+Here's a Python function that prints the Fibonacci sequence up to the 15th term (starting with 1, 1):
+
+```python
+def print_fibonacci_15th_term():
+    """Prints the Fibonacci sequence up to the 15th term.
+    Assumes the first term is 1.
+    """
+    a, b = 1, 1  # First two terms
+    
+    for i in range(15):
+        print(a, end=" ")
+        a, b = b, a + b
+    
+    print()  # Print a newline at the end
+
+
+# Call the function
+print_fibonacci_15th_term()
+```
+
+**Output:**
+```
+1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 
+```
+
+The sequence begins with term 1 = 1 and term 2 = 1, then each subsequent term is the sum of the previous two. The 15th term is **610**.
